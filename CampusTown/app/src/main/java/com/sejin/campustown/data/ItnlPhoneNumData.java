@@ -8,9 +8,7 @@ public class ItnlPhoneNumData {
 
 
 
-    public static final String lntlPhoneNumData="{\n" +
-            "        \"countries\": [\n" +
-            "        {\n" +
+    public static final String intlPhoneNumData="[{\n" +
             "            \"code\": \"+7 840\",\n" +
             "                \"name\": \"Abkhazia\"\n" +
             "        },\n" +
@@ -954,8 +952,7 @@ public class ItnlPhoneNumData {
             "            \"code\": \"+263\",\n" +
             "                \"name\": \"Zimbabwe\"\n" +
             "        }\n" +
-            "  ]\n" +
-            "    }";
+            "  ]";
 
 
 }

@@ -12,7 +12,21 @@ public class UserData {
     private String name;
     private String phone;
     // 체크해서 받는다.
-    private String gender;
+    @Override
+    public String toString() {
+        return "UserData{" +
+                "id='" + id + '\'' +
+                ", password='" + password + '\'' +
+                ", email='" + email + '\'' +
+                ", name='" + name + '\'' +
+                ", phone='" + phone + '\'' +
+                ", gender='" + gender + '\'' +
+                ", birth='" + birth + '\'' +
+                ", index='" + index + '\'' +
+                ", university='" + university + '\'' +
+                ", type='" + type + '\'' +
+                '}';
+    }private String gender;
     private String birth;
 
     // 생성자 ㄴㄴ
