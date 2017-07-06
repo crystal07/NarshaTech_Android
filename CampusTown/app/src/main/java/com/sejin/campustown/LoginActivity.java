@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 import com.sejin.campustown.data.ItnlPhoneNumData;
 import com.sejin.campustown.data.UserData;
@@ -32,7 +33,6 @@ public class LoginActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
 
         btnOK= (Button)findViewById(R.id.btnOK);
 
@@ -60,26 +60,32 @@ public class LoginActivity extends Activity {
             @Override
             public void onClick(View v) {
 
-                if(((EditText)findViewById(R.id.etId)).getText().toString().length() < 6 || ((EditText)findViewById(R.id.etId)).getText().toString().length() > 14){
-
+                if( ((EditText)findViewById(R.id.etId)).getText().toString().length() < 6 || ((EditText)findViewById(R.id.etId)).getText().toString().length() > 14){
+                    Toast.makeText(LoginActivity.this,"Please enter between 6 and 14 characters", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 else if(((EditText)findViewById(R.id.etPassword)).getText().toString().length() < 8 || ((EditText)findViewById(R.id.etPassword)).getText().toString().length() > 17){
+                    Toast.makeText(LoginActivity.this,"Please enter between 8 and 17 characters", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 else if(((EditText)findViewById(R.id.etEmail)).getText().toString().length() > 40 ){
+                    Toast.makeText(LoginActivity.this,"Please enter between 6 and 14 characters", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 else if(((EditText)findViewById(R.id.etName)).getText().toString().length() > 30 ){
+                    Toast.makeText(LoginActivity.this,"Please enter less than 30 characters.", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 else if(((EditText)findViewById(R.id.etPhone)).getText().toString().length() > 15 ){
+                    Toast.makeText(LoginActivity.this,"Please enter less than 15 numbers.", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 else if(((EditText)findViewById(R.id.etBirthday)).getText().toString().length() !=8 ){
+                    Toast.makeText(LoginActivity.this,"Please enter 8-digit birthday.", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 else if (((RadioGroup)findViewById(R.id.rgGender)).getCheckedRadioButtonId() == -1) {
+                    Toast.makeText(LoginActivity.this,"Please check your gender", Toast.LENGTH_SHORT);
                     return;
 
                 }
