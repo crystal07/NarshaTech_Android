@@ -1,0 +1,103 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/mymac/git/NarshaTech_Android/NarshaTech_Android/CampusTown/app/src/main/AndroidManifest.xml:2:1-24:12
+	package
+		ADDED from /Users/mymac/git/NarshaTech_Android/NarshaTech_Android/CampusTown/app/src/main/AndroidManifest.xml:3:5-35
+		INJECTED from /Users/mymac/git/NarshaTech_Android/NarshaTech_Android/CampusTown/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/mymac/git/NarshaTech_Android/NarshaTech_Android/CampusTown/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/mymac/git/NarshaTech_Android/NarshaTech_Android/CampusTown/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/mymac/git/NarshaTech_Android/NarshaTech_Android/CampusTown/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/mymac/git/NarshaTech_Android/NarshaTech_Android/CampusTown/app/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from /Users/mymac/git/NarshaTech_Android/NarshaTech_Android/CampusTown/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/mymac/git/NarshaTech_Android/NarshaTech_Android/CampusTown/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from /Users/mymac/git/NarshaTech_Android/NarshaTech_Android/CampusTown/app/src/main/AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from /Users/mymac/git/NarshaTech_Android/NarshaTech_Android/CampusTown/app/src/main/AndroidManifest.xml:5:22-64
+application
+ADDED from /Users/mymac/git/NarshaTech_Android/NarshaTech_Android/CampusTown/app/src/main/AndroidManifest.xml:7:5-22:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/mymac/.android/build-cache/e41710c52d28631c5ea518f3812967e93ddc1f7f/output/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/mymac/.android/build-cache/2232bb606738db71903a6766de1be44909cfa87c/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/mymac/.android/build-cache/e44e71c240b9b8e33e8b0f0fda9ba1dd17dd027a/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/mymac/.android/build-cache/f35a218cf5129038a601f44e632f1c27c680b9a6/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:recyclerview-v7:21.0.3] /Users/mymac/.android/build-cache/9437c515a86325afbfdbb64bf6745c76c76f2b3e/output/AndroidManifest.xml:17:5-19:19
+MERGED from [com.android.support:support-v4:25.3.1] /Users/mymac/.android/build-cache/79423e85115345183bbc61f0ace9ef8b4a1eda16/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/mymac/.android/build-cache/560916a17ec12b90db7d61f7095abce799fe0e1c/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/mymac/.android/build-cache/99424d36e65083d4a42eea791a1d5d39ed220247/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/mymac/.android/build-cache/fa9381b044f34da7ae75b29a54018619de4edd4a/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/mymac/.android/build-cache/98a9a027216eb7976cf37a5b15f8759620f570e4/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] /Users/mymac/.android/build-cache/d8a660254a7006f418381614863d80a90b7d08eb/output/AndroidManifest.xml:29:5-20
+	android:label
+		ADDED from /Users/mymac/git/NarshaTech_Android/NarshaTech_Android/CampusTown/app/src/main/AndroidManifest.xml:10:9-41
+	android:supportsRtl
+		ADDED from /Users/mymac/git/NarshaTech_Android/NarshaTech_Android/CampusTown/app/src/main/AndroidManifest.xml:12:9-35
+	android:roundIcon
+		ADDED from /Users/mymac/git/NarshaTech_Android/NarshaTech_Android/CampusTown/app/src/main/AndroidManifest.xml:11:9-54
+	android:allowBackup
+		ADDED from /Users/mymac/git/NarshaTech_Android/NarshaTech_Android/CampusTown/app/src/main/AndroidManifest.xml:8:9-35
+	android:icon
+		ADDED from /Users/mymac/git/NarshaTech_Android/NarshaTech_Android/CampusTown/app/src/main/AndroidManifest.xml:9:9-43
+	android:theme
+		ADDED from /Users/mymac/git/NarshaTech_Android/NarshaTech_Android/CampusTown/app/src/main/AndroidManifest.xml:13:9-40
+activity#com.sejin.campustown.LoginActivity
+ADDED from /Users/mymac/git/NarshaTech_Android/NarshaTech_Android/CampusTown/app/src/main/AndroidManifest.xml:14:9-60
+	android:name
+		ADDED from /Users/mymac/git/NarshaTech_Android/NarshaTech_Android/CampusTown/app/src/main/AndroidManifest.xml:14:19-48
+activity#com.sejin.campustown.IntroActivity
+ADDED from /Users/mymac/git/NarshaTech_Android/NarshaTech_Android/CampusTown/app/src/main/AndroidManifest.xml:15:9-21:20
+	android:name
+		ADDED from /Users/mymac/git/NarshaTech_Android/NarshaTech_Android/CampusTown/app/src/main/AndroidManifest.xml:15:19-48
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/mymac/git/NarshaTech_Android/NarshaTech_Android/CampusTown/app/src/main/AndroidManifest.xml:16:13-20:29
+action#android.intent.action.MAIN
+ADDED from /Users/mymac/git/NarshaTech_Android/NarshaTech_Android/CampusTown/app/src/main/AndroidManifest.xml:17:17-69
+	android:name
+		ADDED from /Users/mymac/git/NarshaTech_Android/NarshaTech_Android/CampusTown/app/src/main/AndroidManifest.xml:17:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/mymac/git/NarshaTech_Android/NarshaTech_Android/CampusTown/app/src/main/AndroidManifest.xml:19:17-77
+	android:name
+		ADDED from /Users/mymac/git/NarshaTech_Android/NarshaTech_Android/CampusTown/app/src/main/AndroidManifest.xml:19:27-74
+uses-sdk
+INJECTED from /Users/mymac/git/NarshaTech_Android/NarshaTech_Android/CampusTown/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/mymac/.android/build-cache/e41710c52d28631c5ea518f3812967e93ddc1f7f/output/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/mymac/.android/build-cache/2232bb606738db71903a6766de1be44909cfa87c/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/mymac/.android/build-cache/e44e71c240b9b8e33e8b0f0fda9ba1dd17dd027a/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/mymac/.android/build-cache/f35a218cf5129038a601f44e632f1c27c680b9a6/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:21.0.3] /Users/mymac/.android/build-cache/9437c515a86325afbfdbb64bf6745c76c76f2b3e/output/AndroidManifest.xml:15:5-42
+MERGED from [com.android.support:support-v4:25.3.1] /Users/mymac/.android/build-cache/79423e85115345183bbc61f0ace9ef8b4a1eda16/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/mymac/.android/build-cache/560916a17ec12b90db7d61f7095abce799fe0e1c/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/mymac/.android/build-cache/99424d36e65083d4a42eea791a1d5d39ed220247/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/mymac/.android/build-cache/fa9381b044f34da7ae75b29a54018619de4edd4a/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/mymac/.android/build-cache/98a9a027216eb7976cf37a5b15f8759620f570e4/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.3.1] /Users/mymac/.android/build-cache/d8a660254a7006f418381614863d80a90b7d08eb/output/AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:25.3.1] /Users/mymac/.android/build-cache/2232bb606738db71903a6766de1be44909cfa87c/output/AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from /Users/mymac/git/NarshaTech_Android/NarshaTech_Android/CampusTown/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/mymac/git/NarshaTech_Android/NarshaTech_Android/CampusTown/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/mymac/git/NarshaTech_Android/NarshaTech_Android/CampusTown/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/mymac/git/NarshaTech_Android/NarshaTech_Android/CampusTown/app/src/main/AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:appcompat-v7:25.3.1] /Users/mymac/.android/build-cache/2232bb606738db71903a6766de1be44909cfa87c/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/mymac/.android/build-cache/e44e71c240b9b8e33e8b0f0fda9ba1dd17dd027a/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/mymac/.android/build-cache/f35a218cf5129038a601f44e632f1c27c680b9a6/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:25.3.1] /Users/mymac/.android/build-cache/79423e85115345183bbc61f0ace9ef8b4a1eda16/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/mymac/.android/build-cache/560916a17ec12b90db7d61f7095abce799fe0e1c/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/mymac/.android/build-cache/99424d36e65083d4a42eea791a1d5d39ed220247/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/mymac/.android/build-cache/fa9381b044f34da7ae75b29a54018619de4edd4a/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/mymac/.android/build-cache/98a9a027216eb7976cf37a5b15f8759620f570e4/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] /Users/mymac/.android/build-cache/d8a660254a7006f418381614863d80a90b7d08eb/output/AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:appcompat-v7:25.3.1] /Users/mymac/.android/build-cache/2232bb606738db71903a6766de1be44909cfa87c/output/AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:appcompat-v7:25.3.1] /Users/mymac/.android/build-cache/2232bb606738db71903a6766de1be44909cfa87c/output/AndroidManifest.xml:26:9-47
+activity#android.support.v7.widget.TestActivity
+ADDED from [com.android.support:recyclerview-v7:21.0.3] /Users/mymac/.android/build-cache/9437c515a86325afbfdbb64bf6745c76c76f2b3e/output/AndroidManifest.xml:18:9-115
+	android:label
+		ADDED from [com.android.support:recyclerview-v7:21.0.3] /Users/mymac/.android/build-cache/9437c515a86325afbfdbb64bf6745c76c76f2b3e/output/AndroidManifest.xml:18:19-59
+	android:name
+		ADDED from [com.android.support:recyclerview-v7:21.0.3] /Users/mymac/.android/build-cache/9437c515a86325afbfdbb64bf6745c76c76f2b3e/output/AndroidManifest.xml:18:60-113
