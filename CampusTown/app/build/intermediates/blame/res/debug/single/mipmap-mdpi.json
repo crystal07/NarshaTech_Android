@@ -1,10 +1,10 @@
 [
     {
-        "merged": "/Users/mymac/git/NarshaTech_Android/NarshaTech_Android/CampusTown/app/build/intermediates/res/merged/debug/mipmap-mdpi/ic_launcher_round.png",
-        "source": "/Users/mymac/git/NarshaTech_Android/NarshaTech_Android/CampusTown/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+        "merged": "/Users/mymac/git/NarshaTech_Android/CampusTown/app/build/intermediates/res/merged/debug/mipmap-mdpi/ic_launcher_round.png",
+        "source": "/Users/mymac/git/NarshaTech_Android/CampusTown/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/Users/mymac/git/NarshaTech_Android/NarshaTech_Android/CampusTown/app/build/intermediates/res/merged/debug/mipmap-mdpi/ic_launcher.png",
-        "source": "/Users/mymac/git/NarshaTech_Android/NarshaTech_Android/CampusTown/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+        "merged": "/Users/mymac/git/NarshaTech_Android/CampusTown/app/build/intermediates/res/merged/debug/mipmap-mdpi/ic_launcher.png",
+        "source": "/Users/mymac/git/NarshaTech_Android/CampusTown/app/src/main/res/mipmap-mdpi/ic_launcher.png"
     }
 ]
