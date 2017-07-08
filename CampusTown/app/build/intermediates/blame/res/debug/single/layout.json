@@ -16,6 +16,10 @@
         "source": "/Users/mymac/git/NarshaTech_Android/CampusTown/app/src/main/res/layout/activity_sign_up.xml"
     },
     {
+        "merged": "/Users/mymac/git/NarshaTech_Android/CampusTown/app/build/intermediates/res/merged/debug/layout/item_trips.xml",
+        "source": "/Users/mymac/git/NarshaTech_Android/CampusTown/app/src/main/res/layout/item_trips.xml"
+    },
+    {
         "merged": "/Users/mymac/git/NarshaTech_Android/CampusTown/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_title_material.xml",
         "source": "/Users/mymac/.android/build-cache/2232bb606738db71903a6766de1be44909cfa87c/output/res/layout/abc_alert_dialog_title_material.xml"
     },

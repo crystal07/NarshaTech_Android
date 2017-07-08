@@ -15,18 +15,21 @@
 
         <!--android:theme="@style/AppTheme" -->
 
-        <activity android:name=".SignUpActivity"
-            android:theme="@android:style/Theme.NoTitleBar"
-
-            >
+        <activity android:name=".TempTripActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".SignUpActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            >
+
+        </activity>
         <activity android:name=".IntroActivity" />
-        <activity android:name=".TempTripActivity"></activity>
+
     </application>
 
 </manifest>

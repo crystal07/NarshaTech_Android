@@ -19,10 +19,6 @@ public class UserData {
     private String type;
 
 
-
-
-    private String[] infoArr= new String[9];
-
     // 체크해서 받는다.
     @Override
     public String toString() {
@@ -143,13 +139,6 @@ public class UserData {
     public void setGender(String gender) {
         this.gender = gender;
     }
-
-    public String[] getInfoArr(){
-        return infoArr;
-    }
-
-
-
 
 
 

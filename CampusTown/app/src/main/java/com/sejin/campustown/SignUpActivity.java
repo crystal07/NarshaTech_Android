@@ -120,6 +120,7 @@ public class SignUpActivity extends Activity {
 
 
                 InsertData task = new InsertData();
+                //정보 삽입
                 task.execute(
                         userData.getId(),
                 userData.getPassword(),
