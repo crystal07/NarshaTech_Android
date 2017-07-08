@@ -8,6 +8,8 @@
         android:minSdkVersion="16"
         android:targetSdkVersion="25" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <meta-data
         android:name="android.support.VERSION"
         android:value="25.3.1" />
@@ -19,7 +21,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.sejin.campustown.LoginActivity" >
+
+        <!-- android:theme="@style/AppTheme" -->
+
+        <activity
+            android:name="com.sejin.campustown.SignUpActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,6 +34,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.sejin.campustown.IntroActivity" />
+        <activity android:name="com.sejin.campustown.TempTripActivity" />
     </application>
 
 </manifest>

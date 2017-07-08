@@ -12,6 +12,10 @@
         "source": "/Users/mymac/.android/build-cache/2232bb606738db71903a6766de1be44909cfa87c/output/res/layout/abc_alert_dialog_button_bar_material.xml"
     },
     {
+        "merged": "/Users/mymac/git/NarshaTech_Android/CampusTown/app/build/intermediates/res/merged/debug/layout/activity_sign_up.xml",
+        "source": "/Users/mymac/git/NarshaTech_Android/CampusTown/app/src/main/res/layout/activity_sign_up.xml"
+    },
+    {
         "merged": "/Users/mymac/git/NarshaTech_Android/CampusTown/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_title_material.xml",
         "source": "/Users/mymac/.android/build-cache/2232bb606738db71903a6766de1be44909cfa87c/output/res/layout/abc_alert_dialog_title_material.xml"
     },
@@ -38,6 +42,10 @@
     {
         "merged": "/Users/mymac/git/NarshaTech_Android/CampusTown/app/build/intermediates/res/merged/debug/layout/abc_dialog_title_material.xml",
         "source": "/Users/mymac/.android/build-cache/2232bb606738db71903a6766de1be44909cfa87c/output/res/layout/abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "/Users/mymac/git/NarshaTech_Android/CampusTown/app/build/intermediates/res/merged/debug/layout/activity_temp_trip.xml",
+        "source": "/Users/mymac/git/NarshaTech_Android/CampusTown/app/src/main/res/layout/activity_temp_trip.xml"
     },
     {
         "merged": "/Users/mymac/git/NarshaTech_Android/CampusTown/app/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
@@ -84,10 +92,6 @@
         "source": "/Users/mymac/.android/build-cache/2232bb606738db71903a6766de1be44909cfa87c/output/res/layout/select_dialog_item_material.xml"
     },
     {
-        "merged": "/Users/mymac/git/NarshaTech_Android/CampusTown/app/build/intermediates/res/merged/debug/layout/activity_login.xml",
-        "source": "/Users/mymac/git/NarshaTech_Android/CampusTown/app/src/main/res/layout/activity_login.xml"
-    },
-    {
         "merged": "/Users/mymac/git/NarshaTech_Android/CampusTown/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
         "source": "/Users/mymac/.android/build-cache/2232bb606738db71903a6766de1be44909cfa87c/output/res/layout/abc_list_menu_item_radio.xml"
     },
@@ -118,6 +122,10 @@
     {
         "merged": "/Users/mymac/git/NarshaTech_Android/CampusTown/app/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
         "source": "/Users/mymac/.android/build-cache/2232bb606738db71903a6766de1be44909cfa87c/output/res/layout/abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "/Users/mymac/git/NarshaTech_Android/CampusTown/app/build/intermediates/res/merged/debug/layout/trip.xml",
+        "source": "/Users/mymac/git/NarshaTech_Android/CampusTown/app/src/main/res/layout/trip.xml"
     },
     {
         "merged": "/Users/mymac/git/NarshaTech_Android/CampusTown/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",

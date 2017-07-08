@@ -11,6 +11,18 @@ public class UserData {
     private String email;
     private String name;
     private String phone;
+    private String gender;
+    private String birth;
+
+    private String index;
+    private String university;
+    private String type;
+
+
+
+
+    private String[] infoArr= new String[9];
+
     // 체크해서 받는다.
     @Override
     public String toString() {
@@ -26,12 +38,10 @@ public class UserData {
                 ", university='" + university + '\'' +
                 ", type='" + type + '\'' +
                 '}';
-    }private String gender;
-    private String birth;
+    }
 
     // 생성자 ㄴㄴ
-    private String index;
-    private String university,type;
+
 
     public UserData(String id, String password, String email, String name, String phone, String gender,String birth) {
         this.id = id;
@@ -41,6 +51,10 @@ public class UserData {
         this.phone = phone;
         this.gender = gender;
         this.birth=birth;
+        this.type="0";
+        this.university="NULL";
+
+
     }
 
 
@@ -79,6 +93,7 @@ public class UserData {
         this.birth = birth;
 
     }
+
 
 
     public String getId() {
@@ -129,7 +144,9 @@ public class UserData {
         this.gender = gender;
     }
 
-
+    public String[] getInfoArr(){
+        return infoArr;
+    }
 
 
 
