@@ -24,18 +24,25 @@
 
         <!-- android:theme="@style/AppTheme" -->
 
-        <activity android:name="com.sejin.campustown.TempTripActivity" >
+        <activity android:name="com.sejin.campustown.activity.LoadingActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            />
         </activity>
+        <activity android:name="com.sejin.campustown.activity.TempTripActivity" />
         <activity
-            android:name="com.sejin.campustown.SignUpActivity"
+            android:name="com.sejin.campustown.activity.SignUpActivity"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
-        <activity android:name="com.sejin.campustown.IntroActivity" />
+        <activity
+            android:name="com.sejin.campustown.activity.ForkRoadAcitivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
+        </activity>
+        <activity android:name="com.sejin.campustown.activity.AddTripActivity" >
+        </activity>
     </application>
 
 </manifest>

@@ -40,6 +40,10 @@
         "source": "/Users/mymac/.android/build-cache/2232bb606738db71903a6766de1be44909cfa87c/output/res/layout/notification_template_part_chronometer.xml"
     },
     {
+        "merged": "/Users/mymac/git/NarshaTech_Android/CampusTown/app/build/intermediates/res/merged/debug/layout/activity_fork_road_acitivity.xml",
+        "source": "/Users/mymac/git/NarshaTech_Android/CampusTown/app/src/main/res/layout/activity_fork_road_acitivity.xml"
+    },
+    {
         "merged": "/Users/mymac/git/NarshaTech_Android/CampusTown/app/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml",
         "source": "/Users/mymac/.android/build-cache/2232bb606738db71903a6766de1be44909cfa87c/output/res/layout/select_dialog_multichoice_material.xml"
     },
@@ -50,6 +54,10 @@
     {
         "merged": "/Users/mymac/git/NarshaTech_Android/CampusTown/app/build/intermediates/res/merged/debug/layout/activity_temp_trip.xml",
         "source": "/Users/mymac/git/NarshaTech_Android/CampusTown/app/src/main/res/layout/activity_temp_trip.xml"
+    },
+    {
+        "merged": "/Users/mymac/git/NarshaTech_Android/CampusTown/app/build/intermediates/res/merged/debug/layout/activity_add_trip.xml",
+        "source": "/Users/mymac/git/NarshaTech_Android/CampusTown/app/src/main/res/layout/activity_add_trip.xml"
     },
     {
         "merged": "/Users/mymac/git/NarshaTech_Android/CampusTown/app/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",

@@ -1,4 +1,4 @@
-package com.sejin.campustown;
+package com.sejin.campustown.activity;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
@@ -12,6 +12,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+import com.sejin.campustown.R;
 import com.sejin.campustown.data.IntlPhoneNumData;
 import com.sejin.campustown.data.UserData;
 

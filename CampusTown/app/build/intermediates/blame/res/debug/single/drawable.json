@@ -4,6 +4,10 @@
         "source": "/Users/mymac/.android/build-cache/2232bb606738db71903a6766de1be44909cfa87c/output/res/drawable/abc_list_selector_background_transition_holo_light.xml"
     },
     {
+        "merged": "/Users/mymac/git/NarshaTech_Android/CampusTown/app/build/intermediates/res/merged/debug/drawable/main.png",
+        "source": "/Users/mymac/git/NarshaTech_Android/CampusTown/app/src/main/res/drawable/main.png"
+    },
+    {
         "merged": "/Users/mymac/git/NarshaTech_Android/CampusTown/app/build/intermediates/res/merged/debug/drawable/abc_vector_test.xml",
         "source": "/Users/mymac/.android/build-cache/2232bb606738db71903a6766de1be44909cfa87c/output/res/drawable/abc_vector_test.xml"
     },
@@ -18,6 +22,10 @@
     {
         "merged": "/Users/mymac/git/NarshaTech_Android/CampusTown/app/build/intermediates/res/merged/debug/drawable/abc_ic_ab_back_material.xml",
         "source": "/Users/mymac/.android/build-cache/2232bb606738db71903a6766de1be44909cfa87c/output/res/drawable/abc_ic_ab_back_material.xml"
+    },
+    {
+        "merged": "/Users/mymac/git/NarshaTech_Android/CampusTown/app/build/intermediates/res/merged/debug/drawable/logo_narsha.png",
+        "source": "/Users/mymac/git/NarshaTech_Android/CampusTown/app/src/main/res/drawable/logo_narsha.png"
     },
     {
         "merged": "/Users/mymac/git/NarshaTech_Android/CampusTown/app/build/intermediates/res/merged/debug/drawable/abc_btn_colored_material.xml",
@@ -60,6 +68,10 @@
         "source": "/Users/mymac/.android/build-cache/2232bb606738db71903a6766de1be44909cfa87c/output/res/drawable/abc_seekbar_tick_mark_material.xml"
     },
     {
+        "merged": "/Users/mymac/git/NarshaTech_Android/CampusTown/app/build/intermediates/res/merged/debug/drawable/logo_campus_no_background.png",
+        "source": "/Users/mymac/git/NarshaTech_Android/CampusTown/app/src/main/res/drawable/logo_campus_no_background.png"
+    },
+    {
         "merged": "/Users/mymac/git/NarshaTech_Android/CampusTown/app/build/intermediates/res/merged/debug/drawable/abc_switch_thumb_material.xml",
         "source": "/Users/mymac/.android/build-cache/2232bb606738db71903a6766de1be44909cfa87c/output/res/drawable/abc_switch_thumb_material.xml"
     },
@@ -86,6 +98,10 @@
     {
         "merged": "/Users/mymac/git/NarshaTech_Android/CampusTown/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_small_material.xml",
         "source": "/Users/mymac/.android/build-cache/2232bb606738db71903a6766de1be44909cfa87c/output/res/drawable/abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "/Users/mymac/git/NarshaTech_Android/CampusTown/app/build/intermediates/res/merged/debug/drawable/logo_campus.png",
+        "source": "/Users/mymac/git/NarshaTech_Android/CampusTown/app/src/main/res/drawable/logo_campus.png"
     },
     {
         "merged": "/Users/mymac/git/NarshaTech_Android/CampusTown/app/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",

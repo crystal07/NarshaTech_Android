@@ -10,26 +10,35 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        >
+        android:theme="@style/AppTheme">
 
-        <!--android:theme="@style/AppTheme" -->
+        <!-- android:theme="@style/AppTheme" -->
 
-        <activity android:name=".TempTripActivity">
+        <activity android:name=".activity.LoadingActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            />
         </activity>
 
-        <activity android:name=".SignUpActivity"
-            android:theme="@android:style/Theme.NoTitleBar"
-            >
+        <activity android:name=".activity.TempTripActivity"></activity>
+
+        <activity
+            android:name=".activity.SignUpActivity"
+            android:theme="@android:style/Theme.NoTitleBar">
 
         </activity>
-        <activity android:name=".IntroActivity" />
 
+        <activity
+            android:name=".activity.ForkRoadAcitivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+        </activity>
+
+        <activity android:name=".activity.AddTripActivity">
+
+        </activity>
     </application>
 
 </manifest>

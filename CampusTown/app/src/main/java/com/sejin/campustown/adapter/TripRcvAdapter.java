@@ -17,14 +17,14 @@ import java.util.ArrayList;
  * Created by sejin on 2017. 7. 8..
  */
 
-public class TripAdapter extends RecyclerView.Adapter<TripAdapter.ViewHolder>{
+public class TripRcvAdapter extends RecyclerView.Adapter<TripRcvAdapter.ViewHolder>{
 
 
     ArrayList<TripData> tripList= new ArrayList<>();
     private Context context;
 
 
-    public TripAdapter(Context context, ArrayList<TripData> tripList){
+    public TripRcvAdapter(Context context, ArrayList<TripData> tripList){
         this.tripList= tripList;
         this.context=context;
     }
@@ -32,7 +32,7 @@ public class TripAdapter extends RecyclerView.Adapter<TripAdapter.ViewHolder>{
 
 
     @Override
-    public TripAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public TripRcvAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.item_trips, parent, false);
         ViewHolder viewHolder = new ViewHolder(view);
         return viewHolder;
@@ -45,7 +45,7 @@ public class TripAdapter extends RecyclerView.Adapter<TripAdapter.ViewHolder>{
      * @param position - The position in the list of item to draw
      */
     @Override
-    public void onBindViewHolder(TripAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(TripRcvAdapter.ViewHolder holder, int position) {
         final TripData trip= tripList.get(position);
 
         holder.tvTripDesc.setText(trip.getDescription());
