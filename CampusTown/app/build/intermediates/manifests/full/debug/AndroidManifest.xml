@@ -25,23 +25,22 @@
         <!-- android:theme="@style/AppTheme" -->
 
         <activity android:name="com.sejin.campustown.activity.LoadingActivity" >
+        </activity>
+        <activity android:name="com.sejin.campustown.activity.TempTripActivity" />
+        <activity
+            android:name="com.sejin.campustown.activity.SignUpActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.sejin.campustown.activity.ForkRoadAcitivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity android:name="com.sejin.campustown.activity.AddTripActivity" />
+        <activity android:name="com.sejin.campustown.activity.LoginActivity" />
+        <activity android:name="com.sejin.campustown.activity.RegistGuideActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-            />
-        </activity>
-        <activity android:name="com.sejin.campustown.activity.TempTripActivity" />
-        <activity
-            android:name="com.sejin.campustown.activity.SignUpActivity"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
-        <activity
-            android:name="com.sejin.campustown.activity.ForkRoadAcitivity"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
-        </activity>
-        <activity android:name="com.sejin.campustown.activity.AddTripActivity" >
         </activity>
     </application>
 
