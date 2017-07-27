@@ -10,7 +10,6 @@ import android.widget.Toast;
 public class ActData {
 
     private String id, description, title, category, travelDestination, travelIntroduction, meetingPlacel;
-
     private float price;
     private int maximumCapacity;
     private String addtionalInformation;
@@ -150,12 +149,49 @@ public class ActData {
         this.description = description;
     }
 
+    class ActPicture{
+        private int activityIndex;
+        private String url;
 
-    class ActivitySchedule {
+        public int getActivityIndex() {
+            return activityIndex;
+        }
+
+        public void setActivityIndex(int activityIndex) {
+            this.activityIndex = activityIndex;
+        }
+
+        public String getUrl() {
+            return url;
+        }
+
+        public void setUrl(String url) {
+            this.url = url;
+        }
+    }
+    class ActSchedule {
         private int activityIndex;
         private String location;
         private int startYear, startMonth, startDay, startHour, startMinute, endYear, endMonth, endDay, endHour, endMinute;
+        private String url;
 
+        public String getUrl() {
+            return url;
+        }
+
+        public void setUrl(String url) {
+            this.url = url;
+        }
+
+        public String getIntroductin() {
+            return introductin;
+        }
+
+        public void setIntroductin(String introductin) {
+            this.introductin = introductin;
+        }
+
+        private String introductin;
         public int getActivityIndex() {
             return activityIndex;
         }

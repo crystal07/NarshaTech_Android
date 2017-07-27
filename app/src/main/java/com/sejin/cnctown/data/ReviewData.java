@@ -84,4 +84,11 @@ public class ReviewData
     public void setRating(float rating) {
         this.rating = rating;
     }
+
+
+
+    class HashTag{
+        int activityIndex;
+        String hash;
+    }
 }

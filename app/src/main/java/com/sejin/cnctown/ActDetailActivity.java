@@ -46,17 +46,6 @@ public class ActDetailActivity extends AppCompatActivity {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
         mBtnTmp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
