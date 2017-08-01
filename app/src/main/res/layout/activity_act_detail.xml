@@ -8,10 +8,212 @@
     tools:context="com.sejin.cnctown.ActDetailActivity">
 
 
-    <android.support.v7.widget.RecyclerView
-        android:name="@+id/detailA_rcv_review"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/detail_layout_top"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/detail_layout_top_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <android.support.v4.view.ViewPager
+
+                        android:id="@+id/detail_vp_img"
+
+                        android:layout_width="match_parent"
+
+                        android:layout_height="50dp">
+
+                    </android.support.v4.view.ViewPager>
+
+                    <LinearLayout
+                        android:id="@+id/SliderDots"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal"></LinearLayout>
+
+                    <TextView
+                        android:id="@+id/detail_tv_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:text="타이틀"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <RatingBar
+                        android:id="@+id/detail_rb_avg_rate"
+                        style="@style/Widget.AppCompat.RatingBar.Indicator"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/detail_tv_act_location"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="8dp"
+                        android:layout_marginEnd="26dp"
+                        android:layout_marginRight="26dp" />
+
+                    <TextView
+                        android:id="@+id/detail_act_tv_act_language"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/detail_tv_category"
+                        android:layout_alignStart="@+id/detail_tv_category"
+                        android:layout_below="@+id/detail_tv_category"
+                        android:layout_marginTop="8dp"
+                        android:text="제공 언어" />
+
+                    <TextView
+                        android:id="@+id/detail_tv_act_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/detail_tv_title"
+                        android:layout_alignStart="@+id/detail_tv_title"
+                        android:layout_below="@+id/detail_tv_title"
+                        android:text="location" />
+
+                    <TextView
+                        android:id="@+id/detail_tv_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/detail_tv_act_location"
+                        android:layout_alignStart="@+id/detail_tv_act_location"
+                        android:layout_below="@+id/detail_tv_act_location"
+                        android:layout_marginTop="8dp"
+                        android:text="카테고리" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/detail_layout_price"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/detail_tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="$13.00 / person" />
+
+                <Button
+                    android:id="@+id/detail_btn_buy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/detail_tv_price"
+                    android:layout_toRightOf="@+id/detail_tv_price"
+                    android:elevation="24dp"
+                    android:text="buy" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/detail_layout_description"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/detail_tv_description_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="Description"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/detail_tv_description_subtitle"
+                    android:layout_margin="8dp"
+                    android:text="설명입니다 설명입니다" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/detail_layout_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/detail_tv_place_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/detail_tv_location_subtitle"
+                    android:layout_margin="8dp"
+                    android:text="장소에 관한 설명입니다 장소에 관한 설명입니다 장소에 관한 설명입니다 장소에 관한 설명입니다 " />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/detail_tv_place_description"
+                    android:text="요기에 구글플레이스 들어가야함"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/detail_tv_location_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="장소"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/detail_layout_meeting_place_max_capacity_total_time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/detail_tv_meeting_place"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="meetingplace" />
+
+                <TextView
+                    android:id="@+id/detail_tv_max_capacity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="maxCapacity" />
+
+                <TextView
+                    android:id="@+id/detail_tv_total_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="TotalTIme" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/detailA_rcv_review"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </ScrollView>
 
 
 </LinearLayout>

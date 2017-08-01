@@ -8,7 +8,7 @@ import android.widget.RatingBar;
 import android.widget.TextView;
 
 import com.sejin.cnctown.R;
-import com.sejin.cnctown.data.ReviewData;
+import com.sejin.cnctown.data.ActData;
 
 import java.util.ArrayList;
 
@@ -20,9 +20,9 @@ import java.util.ArrayList;
 
 public class ReviewRcvAdapter extends RecyclerView.Adapter<ReviewRcvAdapter.ViewHolder> {
 
-    ArrayList<ReviewData> reviewList;
+    ArrayList<ActData.ActReviewData> reviewList;
 
-    public ReviewRcvAdapter(ArrayList<ReviewData> reviewList) {
+    public ReviewRcvAdapter(ArrayList<ActData.ActReviewData> reviewList) {
         this.reviewList = reviewList;
     }
 
@@ -36,7 +36,7 @@ public class ReviewRcvAdapter extends RecyclerView.Adapter<ReviewRcvAdapter.View
 
     @Override
     public void onBindViewHolder(ReviewRcvAdapter.ViewHolder holder, int position) {
-        final ReviewData reviewData = reviewList.get(position);
+        final ActData.ActReviewData reviewData = reviewList.get(position);
 
         holder.mUserId.setText(reviewData.getId());
         holder.mDate.setText(reviewData.getDate());

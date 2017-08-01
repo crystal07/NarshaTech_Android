@@ -8,11 +8,11 @@ import java.util.ArrayList;
 
 public class DummyData {
 
-    public static ArrayList<ReviewData> reviewDummyList= new ArrayList<ReviewData>(){
+    public static ArrayList<ActData.ActReviewData> reviewDummyList= new ArrayList<ActData.ActReviewData>(){
         {
-            add (new ReviewData("id","review","2017-07-20 11:11:11",1f));
-            add (new ReviewData("id","review","2017-07-20 11:11:11",2f));
-            add (new ReviewData("id","review","2017-07-20 11:11:11",3f));
+            add (new ActData.ActReviewData("id","review","2017-07-20 11:11:11",1f));
+            add (new ActData.ActReviewData("id","review","2017-07-20 11:11:11",2f));
+            add (new ActData.ActReviewData("id","review","2017-07-20 11:11:11",3f));
         }
 
 

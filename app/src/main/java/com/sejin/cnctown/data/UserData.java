@@ -36,9 +36,6 @@ public class UserData {
                 '}';
     }
 
-    // 생성자 ㄴㄴ
-
-
     public UserData(String id, String password, String email, String lastName, String phone, String gender, String birth) {
         this.id = id;
         this.password = password;

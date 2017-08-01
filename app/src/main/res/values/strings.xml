@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">CnCTown</string>
+    <string name="title_activity_act_update">ActUpdateActivity</string>
 </resources>
