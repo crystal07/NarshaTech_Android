@@ -15,88 +15,82 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="8dp">
 
-            <RelativeLayout
+            <LinearLayout
                 android:id="@+id/detail_layout_top"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v4.view.ViewPager
+
+                    android:id="@+id/detail_vp_img"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="80dp">
+
+                </android.support.v4.view.ViewPager>
 
                 <LinearLayout
-                    android:id="@+id/detail_layout_top_bottom"
+                    android:id="@+id/SliderDots"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="horizontal"></LinearLayout>
 
-                    <android.support.v4.view.ViewPager
+                <TextView
+                    android:id="@+id/detail_tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="타이틀"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
-                        android:id="@+id/detail_vp_img"
+                <RatingBar
+                    android:id="@+id/detail_rb_avg_rate"
+                    style="@style/Widget.AppCompat.RatingBar.Indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:numStars="5"
+                    android:layout_margin="8dp"
+                    android:layout_marginEnd="26dp"
+                    android:layout_marginRight="26dp" />
 
-                        android:layout_width="match_parent"
+                <TextView
+                    android:id="@+id/detail_act_tv_act_language"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/detail_tv_category"
+                    android:layout_alignStart="@+id/detail_tv_category"
+                    android:layout_below="@+id/detail_tv_category"
+                    android:layout_marginTop="8dp"
+                    android:text="제공 언어" />
 
-                        android:layout_height="50dp">
+                <TextView
+                    android:id="@+id/detail_tv_act_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/detail_tv_title"
+                    android:layout_alignStart="@+id/detail_tv_title"
+                    android:layout_below="@+id/detail_tv_title"
+                    android:text="location" />
 
-                    </android.support.v4.view.ViewPager>
-
-                    <LinearLayout
-                        android:id="@+id/SliderDots"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_vertical|center_horizontal"
-                        android:orientation="horizontal"></LinearLayout>
-
-                    <TextView
-                        android:id="@+id/detail_tv_title"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="8dp"
-                        android:text="타이틀"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
-
-                    <RatingBar
-                        android:id="@+id/detail_rb_avg_rate"
-                        style="@style/Widget.AppCompat.RatingBar.Indicator"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_above="@+id/detail_tv_act_location"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignParentRight="true"
-                        android:layout_margin="8dp"
-                        android:layout_marginEnd="26dp"
-                        android:layout_marginRight="26dp" />
-
-                    <TextView
-                        android:id="@+id/detail_act_tv_act_language"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_alignLeft="@+id/detail_tv_category"
-                        android:layout_alignStart="@+id/detail_tv_category"
-                        android:layout_below="@+id/detail_tv_category"
-                        android:layout_marginTop="8dp"
-                        android:text="제공 언어" />
-
-                    <TextView
-                        android:id="@+id/detail_tv_act_location"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_alignLeft="@+id/detail_tv_title"
-                        android:layout_alignStart="@+id/detail_tv_title"
-                        android:layout_below="@+id/detail_tv_title"
-                        android:text="location" />
-
-                    <TextView
-                        android:id="@+id/detail_tv_category"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_alignLeft="@+id/detail_tv_act_location"
-                        android:layout_alignStart="@+id/detail_tv_act_location"
-                        android:layout_below="@+id/detail_tv_act_location"
-                        android:layout_marginTop="8dp"
-                        android:text="카테고리" />
-                </LinearLayout>
-
-            </RelativeLayout>
+                <TextView
+                    android:id="@+id/detail_tv_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/detail_tv_act_location"
+                    android:layout_alignStart="@+id/detail_tv_act_location"
+                    android:layout_below="@+id/detail_tv_act_location"
+                    android:layout_marginTop="8dp"
+                    android:text="카테고리" />
+            </LinearLayout>
 
             <RelativeLayout
                 android:id="@+id/detail_layout_price"

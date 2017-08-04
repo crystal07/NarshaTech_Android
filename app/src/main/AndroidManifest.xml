@@ -13,30 +13,47 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".ActDetailActivity"
-            android:hardwareAccelerated="true">
-
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCWFSZRHWqg407yGi8Ciigbq4rxUhtaJfo" />
 
         <activity
+            android:name=".ActDetailActivity"
+            android:hardwareAccelerated="true">
+        </activity>
+        <activity
+            android:name=".LoadingActivity"
+            android:hardwareAccelerated="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ForkRoadAcitivity"
+            android:hardwareAccelerated="true">
+        </activity>
+        <activity
+            android:name=".AddTripActivity"
+            android:hardwareAccelerated="true">
+        </activity>
+        <activity
+            android:name=".ActMainActivity"
+            android:hardwareAccelerated="true">
+        </activity>
+
+        <activity
             android:name=".ActUpdateActivity"
-            android:label="@string/title_activity_act_update"
             android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
-        <activity android:name=".MapTestActivity">
-
+        <activity
+            android:name=".MapTestActivity">
         </activity>
+
+
     </application>
 
 </manifest>

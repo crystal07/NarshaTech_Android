@@ -36,17 +36,17 @@ public class ActDetailActivity extends AppCompatActivity {
     final int MY_PER_RC2 = 1002;
     final int MY_PER_RC3 = 1003;
 
+    private LinearLayout sliderDotsPanel;
     private Button mBtnTmp;
     private PlacePicker.IntentBuilder mBuilder;
-
-    private RecyclerView mRcvReview;
 
     private ViewPager mVpImg;
     private int dotsCount;
     private ImageView[] dots;
-    private LinearLayout sliderDotsPanel;
 
 
+
+    private RecyclerView mRcvReview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.sejin.cnctown.R;
+import com.sejin.cnctown.data.Manager;
 
 /**
  * Created by sejin on 2017. 8. 1..
@@ -39,8 +40,7 @@ public class ActImgViewPagerAdapter extends PagerAdapter{
 
         View view= layoutInflater.inflate(R.layout.item_viewpager_detail,null);
         ImageView imageView= (ImageView) view.findViewById(R.id.img_viewpager_childimage);
-        imageView.setImageResource(R.drawable.places_ic_search);
-
+        imageView.setImageResource(Manager.getDrawableResId("tmp"+position));
         container.addView(view);
 
         return view;
