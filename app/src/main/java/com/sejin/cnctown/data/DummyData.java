@@ -1,5 +1,6 @@
 package com.sejin.cnctown.data;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 /**
@@ -8,12 +9,14 @@ import java.util.ArrayList;
 
 public class DummyData {
 
+
+
     public static ActData.ActBasicData actBasicData =
             new ActData.ActBasicData(
+                    0,
                     "ghosejin",
                     "멋지고 까리한 세진이 집탐험",
                     "밀착탐구생활",
-                    "왕십리역 6번출구",
                     4.99f,
                     334f,
                     "이 액티비티는 세진이의 집에 방문해 1박 2일간 세진이를 탐구하는 활동입니다",
@@ -22,8 +25,8 @@ public class DummyData {
                     2f,
                     2f,
                     2f,
-                    "기념품: 세진이와 셀카",
-                    "세진이 등에 태워줌",
+                    "기념품",
+                    "어부바",
                     "비밀...^^^"
                     );
     public static ActData.ActSchedule actSchedule = new ActData.ActSchedule(
@@ -31,15 +34,15 @@ public class DummyData {
     );
 
 
-    public static ActData.ActLanguage actLanguage = new ActData.ActLanguage(new ArrayList<String>(){
-        {
-            add("한국어");
-            add("영어");
-            add("일본어");
-        }
-    });
+    public static ActData.ActLanguage actLanguageKorean = new ActData.ActLanguage(0,"한국어");
 
     public static ActData.ActPicture actPicture = new ActData.ActPicture("main");
+
+    public static ArrayList<ActData.ActPicture> pictureDummyList = new ArrayList<ActData.ActPicture>(){
+        {
+            add(actPicture);
+        }
+    };
 
 
     public static ArrayList<ActData.ActReviewData> reviewDummyList = new ArrayList<ActData.ActReviewData>() {
@@ -51,16 +54,19 @@ public class DummyData {
     };
 
 
-    public static ArrayList<ActData> actDummyList = new ArrayList<ActData>(){
+    public static ArrayList<ActData.ActLanguage> langDummyList= new ArrayList<ActData.ActLanguage>(){
         {
-            add(new ActData(actBasicData, actLanguage, actSchedule, actPicture, reviewDummyList));
-//            add(new ActData(actBasicData, actLanguage, actSchedule, actPicture, reviewDummyList));
-//            add(new ActData(actBasicData, actLanguage, actSchedule, actPicture, reviewDummyList));
-//            add(new ActData(actBasicData, actLanguage, actSchedule, actPicture, reviewDummyList));
+            add(actLanguageKorean);
         }
+
     };
 
-    public static ActData actDummyData= new ActData(actBasicData,actLanguage,actSchedule,actPicture,reviewDummyList);
+    public static ActData actDummyData= new ActData(actBasicData,langDummyList,actSchedule,pictureDummyList,reviewDummyList);
 
+    public static ArrayList<ActData> actDummyList =new ArrayList<ActData>(){
+        {
+            add(actDummyData);
+        }
+    };
 
 }

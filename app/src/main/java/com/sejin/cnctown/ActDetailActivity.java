@@ -23,12 +23,18 @@ import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
 import com.google.android.gms.common.GooglePlayServicesRepairableException;
 import com.google.android.gms.location.places.Place;
 import com.google.android.gms.location.places.ui.PlacePicker;
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
 import com.sejin.cnctown.adapter.ActImgViewPagerAdapter;
 import com.sejin.cnctown.adapter.ReviewRcvAdapter;
 import com.sejin.cnctown.data.DummyData;
 import com.sejin.cnctown.data.Manager;
 
-public class ActDetailActivity extends AppCompatActivity {
+public class ActDetailActivity extends AppCompatActivity implements OnMapReadyCallback{
 
     final String TAG = "Test";
     final int PLACE_PICKER_REQUEST = 1;
@@ -59,7 +65,6 @@ public class ActDetailActivity extends AppCompatActivity {
         mRcvReview.setAdapter(new ReviewRcvAdapter(DummyData.reviewDummyList));
 
         mVpImg =(ViewPager)findViewById(R.id.detail_vp_img);
-
         mVpImg.setAdapter(new ActImgViewPagerAdapter(getApplicationContext(),getLayoutInflater()));
 
         dotsCount=mVpImg.getAdapter().getCount();
@@ -70,10 +75,8 @@ public class ActDetailActivity extends AppCompatActivity {
         for (int i =0; i< dotsCount; ++i){
             dots[i]=new ImageView(this);
             dots[i].setImageDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.nonactive_dot));
-
             LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT,LinearLayout.LayoutParams.WRAP_CONTENT);
             params.setMargins(8,0,8,0);
-
             sliderDotsPanel.addView(dots[i],params);
         }
         dots[0].setImageDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.active_dot));
@@ -83,7 +86,6 @@ public class ActDetailActivity extends AppCompatActivity {
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
 
             }
-
             @Override
             public void onPageSelected(int position) {
 
@@ -92,7 +94,6 @@ public class ActDetailActivity extends AppCompatActivity {
                 }
                 dots[position].setImageDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.active_dot));
             }
-
             @Override
             public void onPageScrollStateChanged(int state) {
 
@@ -101,8 +102,14 @@ public class ActDetailActivity extends AppCompatActivity {
 
 
 
+        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
+                .findFragmentById(R.id.detail_map_1);
+
+        mapFragment.getMapAsync(this);
 
     }
+
+
     @Override
     public void onRequestPermissionsResult(int requestCode,
                                            String permissions[], int[] grantResults) {
@@ -220,4 +227,15 @@ public class ActDetailActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    public void onMapReady(GoogleMap googleMap) {
+
+        googleMap.addMarker(new MarkerOptions()
+                .position(new LatLng(10, 10))
+                .title("Hello world"));
+        googleMap.addMarker(new MarkerOptions()
+                .position(new LatLng(40, 40))
+                .title("Hello world"));
+        googleMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(25,25)));
+    }
 }

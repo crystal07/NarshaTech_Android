@@ -19,13 +19,7 @@ public class ActData {
         this.actBasicData = actBasicData;
     }
 
-    public ActLanguage getActLanguage() {
-        return actLanguage;
-    }
 
-    public void setActLanguage(ActLanguage actLanguage) {
-        this.actLanguage = actLanguage;
-    }
 
     public ActSchedule getActSchedule() {
         return actSchedule;
@@ -35,11 +29,20 @@ public class ActData {
         this.actSchedule = actSchedule;
     }
 
-    public ActPicture getActPicture() {
+
+    public ArrayList<ActLanguage> getActLanguage() {
+        return actLanguage;
+    }
+
+    public void setActLanguage(ArrayList<ActLanguage> actLanguage) {
+        this.actLanguage = actLanguage;
+    }
+
+    public ArrayList<ActPicture> getActPicture() {
         return actPicture;
     }
 
-    public void setActPicture(ActPicture actPicture) {
+    public void setActPicture(ArrayList<ActPicture> actPicture) {
         this.actPicture = actPicture;
     }
 
@@ -53,10 +56,10 @@ public class ActData {
 
     public static class ActBasicData {
 
-        private String id;
+        private long id;
+        private String user_id;
         private String title,
-                category, //ㅇ
-                actLocation;//ㅇ 활동 장소
+                category; //ㅇ
         private ActLanguage actLanguage;
         private float actRating; //ㅇ
         private float price; //o
@@ -72,11 +75,11 @@ public class ActData {
         private ActSchedule actSchedule;
 
 
-        public String getId() {
+        public long getId() {
             return id;
         }
 
-        public void setId(String id) {
+        public void setId(long id) {
             this.id = id;
         }
 
@@ -94,14 +97,6 @@ public class ActData {
 
         public void setCategory(String category) {
             this.category = category;
-        }
-
-        public String getActLocation() {
-            return actLocation;
-        }
-
-        public void setActLocation(String actLocation) {
-            this.actLocation = actLocation;
         }
 
         public ActLanguage getActLanguage() {
@@ -208,12 +203,11 @@ public class ActData {
             this.actSchedule = actSchedule;
         }
 
-        public ActBasicData(String id, String title, String category, String actLocation, float actRating, float price, String actIntroduction, String meetingPlace, int maximumCapacity, float totalTime, float readyTime, float lastReadyTime, String offerItem, String vehicle, String addtionalInformation) {
+        public ActBasicData(long id, String user_id, String title, String category, float actRating, float price, String actIntroduction, String meetingPlace, int maximumCapacity, float totalTime, float readyTime, float lastReadyTime, String offerItem, String vehicle, String addtionalInformation) {
             this.id = id;
+            this.user_id=user_id;
             this.title = title;
-
             this.category = category;
-            this.actLocation = actLocation;
             this.actRating = actRating;
             this.price = price;
             this.actIntroduction = actIntroduction;
@@ -232,6 +226,12 @@ public class ActData {
 
     static class ActLanguage {
         int activityIndex;
+        String lang;
+
+        public ActLanguage(int activityIndex, String lang) {
+            this.activityIndex = activityIndex;
+            this.lang = lang;
+        }
 
         public int getActivityIndex() {
             return activityIndex;
@@ -241,19 +241,9 @@ public class ActData {
             this.activityIndex = activityIndex;
         }
 
-        public ArrayList<String> getLangList() {
-            return langList;
-        }
 
-        public void setLangList(ArrayList<String> langList) {
-            this.langList = langList;
-        }
 
-        ArrayList<String> langList;
 
-        ActLanguage(ArrayList langList) {
-            this.langList = langList;
-        }
     }
 
     static class ActSchedule {
@@ -486,13 +476,13 @@ public class ActData {
     }
 
     private ActBasicData actBasicData;
-    private ActLanguage actLanguage;
+    private ArrayList<ActLanguage> actLanguage;
     private ActSchedule actSchedule;
-    private ActPicture actPicture;
+    private ArrayList<ActPicture> actPicture;
     private ArrayList<ActReviewData> actReviewList;
 
 
-    public ActData(ActBasicData actBasicData, ActLanguage actLanguage, ActSchedule actSchedule, ActPicture actPicture, ArrayList<ActReviewData> actReviewList) {
+    public ActData(ActBasicData actBasicData, ArrayList<ActLanguage> actLanguage, ActSchedule actSchedule, ArrayList<ActPicture> actPicture, ArrayList<ActReviewData> actReviewList) {
         this.actBasicData = actBasicData;
         this.actLanguage = actLanguage;
         this.actSchedule = actSchedule;

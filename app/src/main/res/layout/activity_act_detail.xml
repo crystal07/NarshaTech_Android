@@ -30,14 +30,14 @@
 
                     android:layout_width="match_parent"
 
-                    android:layout_height="80dp">
+                    android:layout_height="240dp">
 
                 </android.support.v4.view.ViewPager>
 
                 <LinearLayout
                     android:id="@+id/SliderDots"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_height="40dp"
                     android:gravity="center_vertical|center_horizontal"
                     android:orientation="horizontal"></LinearLayout>
 
@@ -53,14 +53,24 @@
                 <RatingBar
                     android:id="@+id/detail_rb_avg_rate"
                     style="@style/Widget.AppCompat.RatingBar.Indicator"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
-                    android:numStars="5"
                     android:layout_margin="8dp"
                     android:layout_marginEnd="26dp"
-                    android:layout_marginRight="26dp" />
+                    android:layout_marginRight="26dp"
+                    android:numStars="5" />
+
+                <TextView
+                    android:id="@+id/detail_act_tv_vehicle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/detail_tv_category"
+                    android:layout_alignStart="@+id/detail_tv_category"
+                    android:layout_below="@+id/detail_tv_category"
+                    android:layout_marginTop="8dp"
+                    android:text="vehicle" />
 
                 <TextView
                     android:id="@+id/detail_act_tv_act_language"
@@ -90,12 +100,52 @@
                     android:layout_below="@+id/detail_tv_act_location"
                     android:layout_marginTop="8dp"
                     android:text="카테고리" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#c0c0c0" />
+
             </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/detail_layout_host"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/main"
+                    app:civ_border_color="#FF000000"
+                    app:civ_border_width="2dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#c0c0c0" />
+
+
+            </RelativeLayout>
 
             <RelativeLayout
                 android:id="@+id/detail_layout_price"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#c0c0c0" />
 
                 <TextView
                     android:id="@+id/detail_tv_price"
@@ -121,6 +171,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#c0c0c0" />
+
                 <TextView
                     android:id="@+id/detail_tv_description_subtitle"
                     android:layout_width="wrap_content"
@@ -140,10 +197,11 @@
                     android:text="설명입니다 설명입니다" />
             </RelativeLayout>
 
-            <RelativeLayout
+            <LinearLayout
                 android:id="@+id/detail_layout_location"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/detail_tv_place_description"
@@ -155,24 +213,48 @@
                     android:layout_margin="8dp"
                     android:text="장소에 관한 설명입니다 장소에 관한 설명입니다 장소에 관한 설명입니다 장소에 관한 설명입니다 " />
 
-                <TextView
-                    android:id="@+id/textView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_below="@+id/detail_tv_place_description"
-                    android:text="요기에 구글플레이스 들어가야함"
-                    android:textSize="24sp" />
+                <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/detail_map_1"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="240dp"
+                    android:layout_height="200dp"
+                    tools:context="com.sejin.cnctown.ActDetailActivity" />
 
                 <TextView
                     android:id="@+id/detail_tv_location_subtitle"
-                    android:layout_width="wrap_content"
+                    android:layout_width="240dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
                     android:text="장소"
                     android:textStyle="bold" />
-            </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/detail_layout_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <com.prolificinteractive.materialcalendarview.MaterialCalendarView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/detail_calendarview_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:mcv_selectionColor="#00F"
+                    app:mcv_showOtherDates="all" />
+
+                <com.prolificinteractive.materialcalendarview.MaterialCalendarView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/detail_calendarview_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:mcv_selectionColor="#00F"
+                    app:mcv_showOtherDates="all" />
+
+            </LinearLayout>
+
+
+
 
             <LinearLayout
                 android:id="@+id/detail_layout_meeting_place_max_capacity_total_time"
@@ -200,6 +282,13 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
                     android:text="TotalTIme" />
+
+                <View
+                    android:id="@+id/view5"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#c0c0c0" />
             </LinearLayout>
 
             <android.support.v7.widget.RecyclerView
